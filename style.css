@@ -26,8 +26,8 @@ body {
 @media only screen and (min-width:600px) and (max-width:800px){
   #drum-machine{
     display: grid;
-    grid-template-columns: repeat(3, 33.3333333333%);
-   grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 33.3333333333%);
+   grid-template-rows: repeat(2, auto);
   }
   #DrumKeys{
     width:35vw;
@@ -47,11 +47,10 @@ body {
 @media only screen and (min-width: 800px) {
     #drum-machine{
       display: grid;
-      grid-template-columns: repeat(3, 33.3333333333%);
-     grid-template-rows: repeat(3, auto);
+      grid-template-columns: repeat(2, 50%);
+     grid-template-rows: repeat(2, auto);
     }
     #DrumKeys{
-      width:35vw;
       height:50vh;
       border-bottom-style: solid;
       border-bottom-width: 2px;
@@ -62,17 +61,11 @@ body {
       margin:auto;
     }
     #display{
-      width:90px;
-      text-align:center;
-      padding-left:50%;
+      width:100%;
+      text-align:left;
+      margin:0;
+      padding:0;
     }
-}
-@media only screen and (min-width: 1000px){
-  #display{
-    width:90px;
-    text-align:center;
-    padding-left:350px;
-  }
 }
 @media only screen and (max-width: 600px){
   #DrumKeys{
