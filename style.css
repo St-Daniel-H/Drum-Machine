@@ -23,14 +23,35 @@ body {
     border-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) 1;
     background-size: 300% 300%;   
   }
-  @media(min-width: 600px) {
+  @media only screen and (min-width:600px) and (max-width:800px){
+    #drum-machine{
+      display: grid;
+      grid-template-columns: repeat(3, 33.3333333333%);
+     grid-template-rows: repeat(3, auto);
+    }
+    #DrumKeys{
+      width:35vw;
+      height:50vh;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-right-style: solid;
+      border-right-width: 4px;
+      border-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) 1;
+      padding:10px;
+      margin:auto;
+    }
+    #display{
+      text-align:center;
+    }
+  }
+  @media only screen and (min-width: 800px) {
       #drum-machine{
         display: grid;
         grid-template-columns: repeat(3, 33.3333333333%);
        grid-template-rows: repeat(3, auto);
       }
       #DrumKeys{
-        width:100vw;
+        width:35vw;
         height:50vh;
         border-bottom-style: solid;
         border-bottom-width: 2px;
@@ -41,10 +62,19 @@ body {
         margin:auto;
       }
       #display{
+        width:90px;
         text-align:center;
+        padding-left:50%;
       }
   }
-  @media(max-width: 600px){
+  @media only screen and (min-width: 1200px){
+    #display{
+      width:90px;
+      text-align:center;
+      padding-left:350px;
+    }
+  }
+  @media only screen and (max-width: 600px){
     #DrumKeys{
       height:30vh;
       border-bottom-style: solid;
@@ -62,14 +92,12 @@ body {
   padding-right:0px;
   margin-left:0;
   padding-left:0px;
-  width:100%;
+ 
     display: grid;
     grid-template-columns: repeat(3, 33.3333333333%);
    grid-template-rows: repeat(3, auto);
 }
 #display{
-  margin:0;
-  padding:0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
         background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   
